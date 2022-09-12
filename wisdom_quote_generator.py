@@ -35,7 +35,6 @@ print('Welcome to the hub of wisdom quotes. To fetch a random quote, type in "qu
 user_input = input(prompt + ' ')
 
 while user_input == 'quote':
-    # Main program
     entry_list = list(quote_combos.items())
     random_entry = random.choice(entry_list)
     print('\n\n', '--------------------------------------------------------------------------'
@@ -48,7 +47,7 @@ while user_input == 'quote':
 
     while True:
         run_again = input('Run again? (y/n): ')
-        # Checks user response, if not 'y' or 'n', error response
+    
         if (run_again == 'y') or (run_again == 'n'):
             break
         print('Type "y" if you want to fetch another quote'
